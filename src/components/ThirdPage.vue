@@ -10,8 +10,8 @@
 import { useRouter } from 'vue-router'
 const router = useRouter()
 function goHome() {
-  window.history.replaceState({}, '', '/')
-  router.replace('/')
+  window.history.replaceState({}, '', '/?clear_history=true')
+  router.replace('/?clear_history=true')
 }
 </script>
 
